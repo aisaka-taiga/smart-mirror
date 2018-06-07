@@ -7,9 +7,15 @@ if (annyang) {
       $('#tpsreport').animate({bottom: '-100px'});
     }
   };
+  
+  var commandss = {
+    '안녕': function() {
+      $('#tpsreport').animate({bottom: '-100px'});
+    }
+  };
 
   // Add our commands to annyang
-  annyang.addCommands(commands);
+  annyang.addCommands(commandss);
 
   // Start listening. You can call this here, or attach this call to an event, button, etc.
   annyang.start();
